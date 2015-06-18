@@ -1,4 +1,4 @@
-
+SHAREDIR=/home/dong/project/shares
 CC = gcc
 CFLAG = -g -o
 COFLAG = -g -c
@@ -7,7 +7,7 @@ TAGOBJ = getcodesfile getcurrentinfo regetcodedata gethistinfo getcurrentandhist
 
 LINKLIB = -lpthread
 
-INCLDIR = $(HOME)/incl
+INCLDIR = $(SHAREDIR)/incl
 
 all:$(TAGOBJ)
 	ctags *.c $(INCLDIR)/*.h
